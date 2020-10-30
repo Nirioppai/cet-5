@@ -27,10 +27,6 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
   .active {
     background-color: #800000;
   }
@@ -60,3 +56,25 @@ ul {
     color: white;
     text-align: center;
   }
+
+.bottom-footer a {
+    color: #fff
+}
+
+.mt{
+  margin-top: auto;
+}
+
+.hymn{
+
+  
+  
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+
+
+  
+
