@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <map name="map">
+          <area
+            id="area"
+            shape="rect"
+            coords="373, 47, 465, 93"
+            alt="University Gymnasium"
+            onmouseover="showImage( 10, 'University Gymnasium', 'Contains a basketball court.' )"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="198, 223, 202, 237, 212, 242, 227, 239, 233, 226"
+            alt="Amphitheater"
+            onmouseover="showImage( 1, 'Amphitheater', 'A lively venue.')"
+          />
+          <area
+            id="area"
+            shape="circle"
+            coords="277, 337, 40"
+            alt="Interfaith Chappel"
+            onmouseover="showImage( 11, 'Chapel', 'People reflect here spiritually.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="84, 51, 131, 79, 129, 87, 101, 72, 96, 80, 134, 104, 131, 110, 91, 88, 85, 96, 140, 130, 136, 137, 122, 130, 118, 138, 151, 157, 147, 165, 63, 118, 75, 100, 57, 89, 70, 66, 90, 77, 96, 69, 78, 58"
+            alt="High School Laboratory"
+            onmouseover="showImage( 12, 'Laboratory', 'An area for Highschoolers.')"
+          />
+
+          <area
+            id="area"
+            shape="circle"
+            coords="208, 290, 21"
+            alt="Main Building Dome"
+            onmouseover="showImage( 14, 'Dome', 'This is the center of the Main Building.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="220, 266, 233,294, 290, 264, 287, 258, 289, 255, 286, 251, 288, 248, 279, 232"
+            alt="North Wing"
+            onmouseover="showImage( 16, 'North Wing', 'North wing of the main building. Very iconic.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="221, 313, 191, 312, 189, 384, 221, 388"
+            alt="East wing"
+            onmouseover="showImage( 15, 'East Wing', 'East wing of the main building. This looks like an isolated area.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="123, 251, 128, 255, 125,261, 181, 293, 196, 265, 137, 229"
+            alt="West wing"
+            onmouseover="showImage( 18, 'West Wing', 'West wing of the main building. This leads to the dome.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            coords="113, 293, 143, 277, 147, 286, 151, 285, 182, 344, 180, 348, 185, 357, 158, 375, 152, 363, 148, 366"
+            alt="South wing"
+            onmouseover="showImage( 17, 'South Wing', 'South wing of the main building. This faces the nearby body of water.')"
+          />
+          <area
+            id="area"
+            shape="poly"
+            href="#"
+            coords="416, 239, 428, 231 444, 228, 460, 232, 477, 240, 490, 259, 491, 289, 438, 366, 421, 374, 400, 374, 382, 369, 370, 357, 362, 340, 361, 322, 364, 310"
+            alt="University Oval"
+            onmouseover="showImage( 24, 'University Oval', 'The university oval. This is where most PE classes are held.')"
+          />
+        </map>
+        <img
+          id="PUPmap"
+          src="./public/images/map.png"
+          usemap="#map"
+          alt="map"
+        />
+      </div>
+      <div class="col">
+        <div id="preview">
+          Hover your mouse on these available locations on the map:
+          <br />
+          1. Amphitheater
+          <br />
+          10. University Gymnasium
+          <br />
+          11. Chapel
+          <br />
+          12. Laboratory
+          <br />
+          14. PUP Main
+          <br />
+          15. East Wing
+          <br />
+          16. North Wing
+          <br />
+          17. South Wing
+          <br />
+          18. West Wing
+          <br />
+          24. University Oval
+        </div>
+        <br />
+        <br />
+        <div id="data"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function showImage(number, placeTitle, description) {
+        let placeDescription = description;
+
+        //data display
+        document.getElementById('data').innerHTML =
+          number +
+          ': ' +
+          placeTitle +
+          '<br/>' +
+          description +
+          '<br/> <img width="547" height="357" src="./public/images/' +
+          number +
+          '.jpg" alt=number/>';
+      }
+    </script>
+  </body>
+</html>
