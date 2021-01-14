@@ -1,0 +1,136 @@
+body {
+    background-color: #ffffcc;
+    color: #330000;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#container {
+    margin: 5% auto;
+    width: 800px;
+    border: 2px solid #330000;   
+    border-radius: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+#logo {
+    background-color: #CCAA66;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #330000;
+    padding: 2%;
+}
+
+h1 {
+    margin: 0 !important;
+}
+
+
+#leftcolumn {
+    background-color: #E8D882;
+    margin-left: 12px;
+
+}
+
+.float-right{
+    float: right;
+    background-color: #F1E8B0;
+
+}
+
+
+.right{
+    background-color: #F1E8B0;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+
+#footer {
+    background-color: #CCAA66;
+    text-align: center;
+    font-style: italic;
+    padding: 2%;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-right: calc(var(--bs-gutter-x)/ -2);
+	margin-left: calc(var(--bs-gutter-x)/ -2)
+}
+
+.row>* {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x)/ 2);
+	padding-left: calc(var(--bs-gutter-x)/ 2);
+	margin-top: var(--bs-gutter-y)
+}
+
+.col {
+    flex: 1 0 0%;
+    width: 400px;
+}
+
+.row-cols-auto>* {
+	flex: 0 0 auto;
+	width: auto
+}
+
+.row-cols-1>* {
+	flex: 0 0 auto;
+	width: 100%
+}
+
+.row-cols-2>* {
+	flex: 0 0 auto;
+	width: 50%
+}
+
+.row-cols-3>* {
+	flex: 0 0 auto;
+	width: 33.3333333333%
+}
+
+.row-cols-4>* {
+	flex: 0 0 auto;
+	width: 25%
+}
+
+.row-cols-5>* {
+	flex: 0 0 auto;
+	width: 20%
+}
+
+.row-cols-6>* {
+	flex: 0 0 auto;
+	width: 16.6666666667%
+}
+
+
+.col-auto {
+	flex: 0 0 auto;
+	width: auto
+}
+
+.col-2 {
+	flex: 0 0 auto;
+	width: 16.6666666667%
+}
+
+
+.navBar{
+    display: block
+    
+}
